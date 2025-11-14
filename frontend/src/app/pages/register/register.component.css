@@ -1,0 +1,73 @@
+.registro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f4f6fa;
+}
+
+.registro-form {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn-registrar {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn-registrar:hover {
+  background-color: #0056b3;
+}
+
+.mensaje-error {
+  color: #c62828;
+  margin-top: 0.8rem;
+}
+
+.mensaje-exito {
+  color: #2e7d32;
+  margin-top: 0.8rem;
+}
+
+.texto-login {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,30 @@
+<div class="registro-container">
+  <form class="registro-form" (ngSubmit)="registrarUsuario()">
+    <h2>🧾 Crear cuenta</h2>
+
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input id="nombre" type="text" [(ngModel)]="nombre" name="nombre" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Correo electrónico</label>
+      <input id="email" type="email" [(ngModel)]="email" name="email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Contraseña</label>
+      <input id="password" type="password" [(ngModel)]="password" name="password" required />
+    </div>
+
+    <button type="submit" class="btn-registrar">Registrarme</button>
+
+    <p class="mensaje-error" *ngIf="mensajeError">{{ mensajeError }}</p>
+    <p class="mensaje-exito" *ngIf="mensajeExito">{{ mensajeExito }}</p>
+
+    <p class="texto-login">
+      ¿Ya tienes una cuenta?
+      <a routerLink="/login">Inicia sesión</a>
+    </p>
+  </form>
+</div>

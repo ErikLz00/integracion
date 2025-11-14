@@ -1,0 +1,93 @@
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Hola soy Diego Perez</h1>
+    <p>Bienvenido a mi página de venta de cursos 🚀</p>
+    <a class="btn" routerLink="/cursos">Ver Cursos</a>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="beneficios">
+    <h2>¿Por qué elegirnos?</h2>
+    <div class="grid">
+      <div class="card">📚 Cursos actualizados constantemente</div>
+      <div class="card">⏰ Aprende a tu propio ritmo</div>
+      <div class="card">🏅 Certificación al finalizar</div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stat-item">
+      <span>👨‍🎓</span>
+      <h3>+1,200</h3>
+      <p>Estudiantes satisfechos</p>
+    </div>
+    <div class="stat-item">
+      <span>📚</span>
+      <h3>15</h3>
+      <p>Cursos disponibles</p>
+    </div>
+    <div class="stat-item">
+      <span>⭐</span>
+      <h3>4.9 / 5</h3>
+      <p>Calificación promedio</p>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="categorias">
+    <h2>Explora nuestras categorías</h2>
+    <div class="categorias-grid">
+
+      <div class="cat-card">
+        <img src="./../../../assets/images/programacion.png" alt="Programación">
+        <h3>Programación</h3>
+        <p>Desarrolla habilidades en lenguajes y frameworks modernos.</p>
+        <a routerLink="/cursos" [queryParams]="{ cat: 'programacion' }" class="btn-sec">Ver Cursos</a>
+      </div>
+
+      <div class="cat-card">
+        <img src="./../../../assets/images/diseño.jpg" alt="Diseño">
+        <h3>Diseño</h3>
+        <p>Aprende herramientas y técnicas de diseño profesional.</p>
+        <a routerLink="/cursos" [queryParams]="{ cat: 'diseno' }" class="btn-sec">Ver Cursos</a>
+      </div>
+
+      <div class="cat-card">
+        <img src="./../../../assets/images/marketing.jpg" alt="Marketing">
+        <h3>Marketing</h3>
+        <p>Domina estrategias para hacer crecer marcas y negocios.</p>
+        <a routerLink="/cursos" [queryParams]="{ cat: 'marketing' }" class="btn-sec">Ver Cursos</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonios">
+    <h2>Lo que dicen nuestros estudiantes</h2>
+    <div class="testimonios-grid">
+      <div class="t-card">
+        <img src="./../../../assets/images/usuario.png">
+        <p>“Excelente contenido y práctico. Mejoré mis habilidades rápido 🙌”</p>
+        <span>- Mariana López</span>
+      </div>
+      <div class="t-card">
+        <img src="./../../../assets/images/usuario.png">
+        <p>“Muy claro y bien explicado. ⭐⭐⭐⭐⭐”</p>
+        <span>- Luis Romero</span>
+      </div>
+      <div class="t-card">
+        <img src="./../../../assets/images/usuario.png">
+        <p>“Gracias a los cursos conseguí trabajo. 100% recomendado 😄”</p>
+        <span>- Sofía Díaz</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<app-chatbot></app-chatbot>
+

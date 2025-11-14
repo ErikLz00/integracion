@@ -1,0 +1,58 @@
+<div class="chatbot-container">
+  <!-- Botón flotante -->
+  <button *ngIf="!mostrarChat" 
+          class="chatbot-toggle-btn"
+          (click)="toggleChat()">
+    💬
+  </button>
+
+  <!-- Ventana del chat -->
+  <div *ngIf="mostrarChat" class="chatbot-window">
+    <!-- Header -->
+    <div class="chatbot-header">
+      <div class="chatbot-title">
+        <span class="chatbot-avatar">🤖</span>
+        <div>
+          <h3>Asistente de Cursos</h3>
+          <span class="chatbot-status">En línea</span>
+        </div>
+      </div>
+      <button (click)="toggleChat()" class="close-button">
+        ✕
+      </button>
+    </div>
+
+    <!-- Mensajes -->
+    <div class="chatbot-messages">
+      <div *ngFor="let mensaje of mensajes" 
+           [class]="'message ' + (mensaje.esUsuario ? 'user-message' : 'bot-message')">
+        <div class="message-content" [innerHTML]="mensaje.texto"></div>
+      </div>
+      
+      <div *ngIf="cargando" class="message bot-message">
+        <div class="message-content typing-indicator">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input -->
+    <div class="chatbot-input-form">
+      <input
+        type="text"
+        [(ngModel)]="inputMensaje"
+        (keyup.enter)="enviarMensaje()"
+        placeholder="Pregunta sobre cursos..."
+        [disabled]="cargando"
+        class="chatbot-input">
+      <button 
+        (click)="enviarMensaje()"
+        [disabled]="cargando || !inputMensaje.trim()"
+        class="send-button">
+        📤
+      </button>
+    </div>
+  </div>
+</div>

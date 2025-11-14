@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>📚 Nuestros Cursos</h2>
+  <div class="grid">
+    <div class="card" *ngFor="let curso of cursos">
+      <img [src]="'http://localhost:3000/' + curso.imagen" [alt]="curso.titulo">
+      <h3>{{ curso.titulo }}</h3>
+      <p>{{ curso.descripcion }}</p>
+      <p><strong>{{ curso.precio | currency:'PEN' }}</strong></p>
+      <p><em>{{ curso.categoria }}</em></p>
+      <a [routerLink]="['/curso', curso.id]" class="btn">Comprar</a>
+    </div>
+  </div>
+</div>
