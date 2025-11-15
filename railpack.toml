@@ -1,2 +1,6 @@
-[service]
-start = "cd backend && npm install && npm start"
+[build]
+builder = "nodejs"
+
+[deploy]
+start = "node backend/src/app.js"
+
