@@ -1,2 +1,2 @@
-[[service]]
-path = "backend"
+[service]
+start = "cd backend && npm install && npm start"
