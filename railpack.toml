@@ -2,5 +2,5 @@
 builder = "nodejs"
 
 [deploy]
-start = "node backend/src/app.js"
+start = "npm --prefix backend start"
 
