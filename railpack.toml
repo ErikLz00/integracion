@@ -1,0 +1,8 @@
+[[service]]
+name = "backend"
+# Esto le dice a Railpack dónde encontrar el código fuente y el package.json
+path = "backend" 
+
+[service.deploy]
+# Ejecuta el script 'start' que está en backend/package.json ("node src/app.js")
+start_command = "npm start"
