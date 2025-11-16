@@ -1,0 +1,6 @@
+// package.json (RAÍZ)
+{
+"scripts": {
+  "start": "npm --prefix backend start" 
+}
+}
