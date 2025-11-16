@@ -25,7 +25,7 @@ app.use(express.json());
 
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url)); 
-const ANGULAR_DIST_PATH = path.join(__dirname, '..', '..', 'frontend', 'dist', 'cursos-frontend', 'browser'); 
+const ANGULAR_DIST_PATH = path.join(__dirname, '..', '..', 'backend', 'dist', 'cursos-frontend', 'browser'); 
 
 // --- Rutas de la API (Backend) ---
 app.use("/api/cursos", cursosRoutes);
