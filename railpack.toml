@@ -1,6 +1,6 @@
 # Define el servicio de backend
 [[service]]
-name = "backend-service"
+name = "backend"
 # Le dice a Railway que busque los archivos de configuración (como package.json) dentro de la carpeta 'backend'
 path = "backend" 
 
