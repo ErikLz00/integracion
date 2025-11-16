@@ -1,0 +1,6 @@
+[build]
+builder = "nodejs"
+
+[deploy]
+start = "npm --prefix backend start"
+
